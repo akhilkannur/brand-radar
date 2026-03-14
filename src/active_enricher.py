@@ -23,6 +23,8 @@ ROOT_DIR = Path(__file__).parent.parent
 DATA_DIR = ROOT_DIR / "data"
 COMPANIES_CSV = DATA_DIR / "ai_companies.csv"
 SNAPSHOTS_DIR = DATA_DIR / "snapshots"
+WEB_DATA_DIR = ROOT_DIR / "web" / "data"
+WEB_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------------------
 # Active Signal Configuration (Mapping keywords to Firehose-compatible tags)
@@ -148,7 +150,17 @@ class ActiveEnricher:
         # Recalculate and Save
         scores = self.processor.get_all_scores(all_signals)
         snap_path = self.processor.save_snapshot(scores, str(SNAPSHOTS_DIR))
+        
+        # Save to web frontend
+        with open(WEB_DATA_DIR / "intelligence.json", "w") as f:
+            json.dump({
+                "generated_at": datetime.now().isoformat(),
+                "company_count": len(scores),
+                "scores": scores
+            }, f, indent=2)
+            
         print(f"🚀 Enrichment Complete! New snapshot: {snap_path}")
+        print(f"📡 Data updated for Next.js frontend in {WEB_DATA_DIR}/intelligence.json")
 
     def _get_latest_snapshot(self) -> Optional[Path]:
         snaps = sorted(SNAPSHOTS_DIR.glob("scores_*.json"), reverse=True)
