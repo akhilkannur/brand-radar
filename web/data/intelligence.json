@@ -1,53 +1,54 @@
 {
-  "generated_at": "2026-03-14T09:28:07.756609",
+  "generated_at": "2026-03-14T12:55:32.293670",
   "company_count": 50,
   "scores": [
     {
       "company": "OpenAI",
-      "score": 39,
-      "trend": "rising",
+      "score": 30,
+      "trend": "stable",
       "breakdown": {
-        "funding": 15.0,
-        "leadership": 12.0,
-        "product": 0,
-        "hiring": 0,
-        "marketing": 12.0,
-        "partnership": 0
+        "ad_spend": 13.5,
+        "funding": 12.0,
+        "leadership": 4.5
       },
       "top_signals": [
         {
           "company": "OpenAI",
-          "signal_type": "funding",
-          "signal_strength": 10,
-          "title": "OpenAI closes $6.6B funding round at $157B valuation",
-          "url": "https://techcrunch.com/openai-funding",
-          "source": "techcrunch.com",
-          "timestamp": "2026-03-12T09:28:07.753929",
-          "summary": "OpenAI has closed its latest funding round, raising $6.6 billion."
+          "signal_type": "ad_spend",
+          "signal_strength": 9,
+          "title": "OpenAI launches Super Bowl campaign and ChatGPT advertising network",
+          "url": "https://adage.com/2026/02/openai-superbowl-ads-launch/",
+          "source": "adage.com",
+          "timestamp": "2026-02-14T09:00:00",
+          "summary": "OpenAI ran its first Super Bowl campaign and confirmed the rollout of native ads within ChatGPT.",
+          "why_it_matters": "Active advertising or brand campaign \u2014 confirmed spend"
         },
         {
           "company": "OpenAI",
-          "signal_type": "marketing",
+          "signal_type": "funding",
           "signal_strength": 8,
-          "title": "OpenAI hires WPP for global brand campaign",
-          "url": "https://adage.com/openai-wpp",
-          "source": "adage.com",
-          "timestamp": "2026-03-13T09:28:07.753929",
-          "summary": "OpenAI selects WPP as agency of record for upcoming brand campaign."
+          "title": "OpenAI raises historic 10B round led by Amazon and Nvidia",
+          "url": "https://techcrunch.com/2026/02/27/openai-funding-largest-private-tech-deal/",
+          "source": "techcrunch.com",
+          "timestamp": "2026-02-27T10:00:00",
+          "summary": "OpenAI secured a record-breaking 10B funding round at a 40B valuation to expand AI infrastructure.",
+          "why_it_matters": "Fresh capital typically leads to marketing spend within 3-6 months"
         },
         {
           "company": "OpenAI",
           "signal_type": "leadership",
-          "signal_strength": 8,
-          "title": "OpenAI appoints new CMO from Google",
-          "url": "https://bloomberg.com/openai-cmo",
-          "source": "bloomberg.com",
-          "timestamp": "2026-03-09T09:28:07.753929",
-          "summary": "OpenAI hires former Google VP of Marketing as its first CMO."
+          "signal_strength": 3,
+          "title": "Kate Rouch leads OpenAI marketing expansion as CMO",
+          "url": "https://brand-innovators.com/2026/openai-marketing-leadership-rouch/",
+          "source": "brand-innovators.com",
+          "timestamp": "2026-01-15T12:00:00",
+          "summary": "CMO Kate Rouch is spearheading OpenAIs transition from research lab to global consumer brand.",
+          "why_it_matters": "New marketing/executive leadership often triggers agency reviews"
         }
       ],
       "signal_count": 3,
-      "last_signal": "2026-03-13T09:28:07.753929",
+      "last_signal": "2026-02-27T10:00:00",
+      "insight": "\ud83d\udd25 **CRITICAL WINDOW:** New leadership + fresh capital indicates a total GTM overhaul is likely in the next 3 months. Latest Trigger: \"OpenAI launches Super Bowl campaign and ChatGPT advertising network\"",
       "category": "Foundation Model",
       "stage": "Late"
     },
