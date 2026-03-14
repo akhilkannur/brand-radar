@@ -375,7 +375,8 @@ def render_detail(company_data):
     st.divider()
 
     # Insight / Narrative
-    st.markdown(f'<div class="narrative-box"><strong>Intelligence Summary:</strong><br>{s["insight"]}</div>', unsafe_allow_html=True)
+    insight_text = s.get("insight", "No detailed strategic insight available for this snapshot.")
+    st.markdown(f'<div class="narrative-box"><strong>Intelligence Summary:</strong><br>{insight_text}</div>', unsafe_allow_html=True)
 
     # Signal Breakdown Chart
     st.markdown('<div class="sh">📊 Intent Signal Breakdown</div>', unsafe_allow_html=True)
