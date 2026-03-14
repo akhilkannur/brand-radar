@@ -1,0 +1,1001 @@
+{
+  "generated_at": "2026-03-14T09:28:07.756609",
+  "company_count": 50,
+  "scores": [
+    {
+      "company": "OpenAI",
+      "score": 39,
+      "trend": "rising",
+      "breakdown": {
+        "funding": 15.0,
+        "leadership": 12.0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 12.0,
+        "partnership": 0
+      },
+      "top_signals": [
+        {
+          "company": "OpenAI",
+          "signal_type": "funding",
+          "signal_strength": 10,
+          "title": "OpenAI closes $6.6B funding round at $157B valuation",
+          "url": "https://techcrunch.com/openai-funding",
+          "source": "techcrunch.com",
+          "timestamp": "2026-03-12T09:28:07.753929",
+          "summary": "OpenAI has closed its latest funding round, raising $6.6 billion."
+        },
+        {
+          "company": "OpenAI",
+          "signal_type": "marketing",
+          "signal_strength": 8,
+          "title": "OpenAI hires WPP for global brand campaign",
+          "url": "https://adage.com/openai-wpp",
+          "source": "adage.com",
+          "timestamp": "2026-03-13T09:28:07.753929",
+          "summary": "OpenAI selects WPP as agency of record for upcoming brand campaign."
+        },
+        {
+          "company": "OpenAI",
+          "signal_type": "leadership",
+          "signal_strength": 8,
+          "title": "OpenAI appoints new CMO from Google",
+          "url": "https://bloomberg.com/openai-cmo",
+          "source": "bloomberg.com",
+          "timestamp": "2026-03-09T09:28:07.753929",
+          "summary": "OpenAI hires former Google VP of Marketing as its first CMO."
+        }
+      ],
+      "signal_count": 3,
+      "last_signal": "2026-03-13T09:28:07.753929",
+      "category": "Foundation Model",
+      "stage": "Late"
+    },
+    {
+      "company": "Anthropic",
+      "score": 33,
+      "trend": "rising",
+      "breakdown": {
+        "funding": 15.0,
+        "leadership": 0,
+        "product": 12.0,
+        "hiring": 6.0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [
+        {
+          "company": "Anthropic",
+          "signal_type": "funding",
+          "signal_strength": 10,
+          "title": "Anthropic raises $2B from Google, Salesforce",
+          "url": "https://reuters.com/anthropic-funding",
+          "source": "reuters.com",
+          "timestamp": "2026-03-11T09:28:07.753929",
+          "summary": "Anthropic secures $2B in new funding led by Google."
+        },
+        {
+          "company": "Anthropic",
+          "signal_type": "product",
+          "signal_strength": 8,
+          "title": "Anthropic launches Claude 4 with enterprise features",
+          "url": "https://venturebeat.com/anthropic-claude4",
+          "source": "venturebeat.com",
+          "timestamp": "2026-03-13T09:28:07.753929",
+          "summary": "New Claude 4 model targets enterprise customers."
+        },
+        {
+          "company": "Anthropic",
+          "signal_type": "hiring",
+          "signal_strength": 4,
+          "title": "Anthropic hiring VP of Brand Marketing",
+          "url": "https://linkedin.com/jobs/anthropic",
+          "source": "linkedin.com",
+          "timestamp": "2026-03-14T09:28:07.753929",
+          "summary": "Anthropic posts senior marketing leadership role."
+        }
+      ],
+      "signal_count": 3,
+      "last_signal": "2026-03-14T09:28:07.753929",
+      "category": "Foundation Model",
+      "stage": "Late"
+    },
+    {
+      "company": "Perplexity",
+      "score": 15,
+      "trend": "rising",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 15.0,
+        "partnership": 0
+      },
+      "top_signals": [
+        {
+          "company": "Perplexity",
+          "signal_type": "marketing",
+          "signal_strength": 10,
+          "title": "Perplexity launches first Super Bowl ad campaign",
+          "url": "https://wsj.com/perplexity-superbowl",
+          "source": "wsj.com",
+          "timestamp": "2026-03-10T09:28:07.753929",
+          "summary": "AI search startup Perplexity to air ad during Super Bowl."
+        }
+      ],
+      "signal_count": 1,
+      "last_signal": "2026-03-10T09:28:07.753929",
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Scale AI",
+      "score": 10,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 10.5,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [
+        {
+          "company": "Scale AI",
+          "signal_type": "leadership",
+          "signal_strength": 7,
+          "title": "Scale AI names new CRO to drive enterprise sales",
+          "url": "https://fortune.com/scale-ai-cro",
+          "source": "fortune.com",
+          "timestamp": "2026-02-22T09:28:07.753929",
+          "summary": "Scale AI hires seasoned SaaS executive as Chief Revenue Officer."
+        }
+      ],
+      "signal_count": 1,
+      "last_signal": "2026-02-22T09:28:07.753929",
+      "category": "AI Infrastructure",
+      "stage": "Late"
+    },
+    {
+      "company": "Cursor",
+      "score": 9,
+      "trend": "declining",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 9.0
+      },
+      "top_signals": [
+        {
+          "company": "Cursor",
+          "signal_type": "partnership",
+          "signal_strength": 6,
+          "title": "Cursor partners with GitHub for IDE integration",
+          "url": "https://techcrunch.com/cursor-github",
+          "source": "techcrunch.com",
+          "timestamp": "2026-03-04T09:28:07.753929",
+          "summary": "Cursor announces deep GitHub integration partnership."
+        }
+      ],
+      "signal_count": 1,
+      "last_signal": "2026-03-04T09:28:07.753929",
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Google DeepMind",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "Foundation Model",
+      "stage": "Public"
+    },
+    {
+      "company": "Meta AI",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "Foundation Model",
+      "stage": "Public"
+    },
+    {
+      "company": "Mistral AI",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "Foundation Model",
+      "stage": "Growth"
+    },
+    {
+      "company": "Cohere",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "Foundation Model",
+      "stage": "Growth"
+    },
+    {
+      "company": "AI21 Labs",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "Foundation Model",
+      "stage": "Growth"
+    },
+    {
+      "company": "xAI",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "Foundation Model",
+      "stage": "Late"
+    },
+    {
+      "company": "Stability AI",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "Foundation Model",
+      "stage": "Growth"
+    },
+    {
+      "company": "Inflection AI",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "Foundation Model",
+      "stage": "Growth"
+    },
+    {
+      "company": "Jasper",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Runway",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Midjourney",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "ElevenLabs",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Synthesia",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Glean",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Harvey",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Hebbia",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Writer",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Copy.ai",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Moveworks",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Adept AI",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Sierra AI",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Hugging Face",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Infrastructure",
+      "stage": "Growth"
+    },
+    {
+      "company": "Weights & Biases",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Infrastructure",
+      "stage": "Growth"
+    },
+    {
+      "company": "LangChain",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Infrastructure",
+      "stage": "Growth"
+    },
+    {
+      "company": "Pinecone",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Infrastructure",
+      "stage": "Growth"
+    },
+    {
+      "company": "Weaviate",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Infrastructure",
+      "stage": "Growth"
+    },
+    {
+      "company": "Replicate",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Infrastructure",
+      "stage": "Growth"
+    },
+    {
+      "company": "Modal",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Infrastructure",
+      "stage": "Growth"
+    },
+    {
+      "company": "Together AI",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Infrastructure",
+      "stage": "Growth"
+    },
+    {
+      "company": "Anyscale",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Infrastructure",
+      "stage": "Growth"
+    },
+    {
+      "company": "Databricks",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Infrastructure",
+      "stage": "Late"
+    },
+    {
+      "company": "Snorkel AI",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Infrastructure",
+      "stage": "Growth"
+    },
+    {
+      "company": "Labelbox",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Infrastructure",
+      "stage": "Growth"
+    },
+    {
+      "company": "Unstructured",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Infrastructure",
+      "stage": "Growth"
+    },
+    {
+      "company": "Cerebras",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Hardware",
+      "stage": "Growth"
+    },
+    {
+      "company": "Groq",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Hardware",
+      "stage": "Growth"
+    },
+    {
+      "company": "SambaNova",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Hardware",
+      "stage": "Growth"
+    },
+    {
+      "company": "d-Matrix",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Hardware",
+      "stage": "Growth"
+    },
+    {
+      "company": "Cognition",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Magic AI",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Poolside",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "Foundation Model",
+      "stage": "Growth"
+    },
+    {
+      "company": "Sakana AI",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "Foundation Model",
+      "stage": "Growth"
+    },
+    {
+      "company": "Imbue",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "Foundation Model",
+      "stage": "Growth"
+    },
+    {
+      "company": "Pika",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    },
+    {
+      "company": "Lightricks",
+      "score": 0,
+      "trend": "stable",
+      "breakdown": {
+        "funding": 0,
+        "leadership": 0,
+        "product": 0,
+        "hiring": 0,
+        "marketing": 0,
+        "partnership": 0
+      },
+      "top_signals": [],
+      "signal_count": 0,
+      "last_signal": null,
+      "category": "AI Application",
+      "stage": "Growth"
+    }
+  ]
+}
