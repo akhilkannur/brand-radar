@@ -16,7 +16,7 @@ const BrandRadarDashboard = () => {
           </div>
           <div className="flex items-center gap-4 text-sm font-medium text-slate-500">
             <span className="flex items-center gap-1"><ShieldCheck className="w-4 h-4 text-green-500" /> AI Intent Intelligence</span>
-            <span className="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-xs">Updated {new Date(intelligence.generated_at).toLocaleDateString()}</span>
+            <span className="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-xs">Updated {intelligence.generated_at ? new Date(intelligence.generated_at).toLocaleDateString() : 'Today'}</span>
           </div>
         </div>
       </header>
@@ -50,7 +50,7 @@ const BrandRadarDashboard = () => {
                       )}
                     </div>
                     <p className="text-slate-600 text-sm line-clamp-1 leading-relaxed">
-                      {s.insight.split('. ')[0]}.
+                      {(s as any).insight ? (s as any).insight.split('. ')[0] : 'Strategic assessment in progress'}.
                     </p>
                     <div className="flex gap-2 mt-3">
                       {Object.keys(s.breakdown).map(type => (
