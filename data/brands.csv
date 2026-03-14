@@ -1,0 +1,98 @@
+# Top 100 Advertisers in the US (Starter List)
+# Format: name,website,category
+
+Nike,https://www.nike.com,Apparel
+Coca-Cola,https://www.coca-colacompany.com,CPG
+PepsiCo,https://www.pepsico.com,CPG
+Procter & Gamble,https://www.pg.com,CPG
+Unilever,https://www.unilever.com,CPG
+Amazon,https://www.amazon.com,Tech/Retail
+Apple,https://www.apple.com,Tech
+Google,https://www.google.com,Tech
+Microsoft,https://www.microsoft.com,Tech
+Meta,https://www.meta.com,Tech
+Walmart,https://www.walmart.com,Retail
+Target,https://www.target.com,Retail
+Home Depot,https://www.homedepot.com,Retail
+McDonald's,https://www.mcdonalds.com,Restaurant
+Starbucks,https://www.starbucks.com,Restaurant
+Ford,https://www.ford.com,Auto
+General Motors,https://www.gm.com,Auto
+Toyota,https://www.toyota.com,Auto
+Geico,https://www.geico.com,Finance
+State Farm,https://www.statefarm.com,Finance
+JPMorgan Chase,https://www.jpmorganchase.com,Finance
+American Express,https://www.americanexpress.com,Finance
+Disney,https://www.disney.com,Entertainment
+Netflix,https://www.netflix.com,Entertainment
+Warner Bros,https://www.warnerbros.com,Entertainment
+Pfizer,https://www.pfizer.com,Pharma
+Johnson & Johnson,https://www.jnj.com,Pharma
+Merck,https://www.merck.com,Pharma
+Verizon,https://www.verizon.com,Telecom
+AT&T,https://www.att.com,Telecom
+T-Mobile,https://www.t-mobile.com,Telecom
+L'Oréal,https://www.loreal.com,CPG
+Estée Lauder,https://www.esteelauder.com,CPG
+Colgate-Palmolive,https://www.colgatepalmolive.com,CPG
+Nestlé,https://www.nestle.com,CPG
+Kellogg's,https://www.kelloggs.com,CPG
+General Mills,https://www.generalmills.com,CPG
+Mars,https://www.mars.com,CPG
+Mondelez,https://www.mondelezinternational.com,CPG
+Pepsi,https://www.pepsi.com,CPG
+Budweiser,https://www.budweiser.com,CPG
+Heineken,https://www.heineken.com,CPG
+Diageo,https://www.diageo.com,CPG
+LVMH,https://www.lvmh.com,Luxury
+Gucci,https://www.gucci.com,Luxury
+Louis Vuitton,https://www.louisvuitton.com,Luxury
+Chanel,https://www.chanel.com,Luxury
+Rolex,https://www.rolex.com,Luxury
+Samsung,https://www.samsung.com,Tech
+LG,https://www.lg.com,Tech
+Sony,https://www.sony.com,Tech
+Panasonic,https://www.panasonic.com,Tech
+Intel,https://www.intel.com,Tech
+AMD,https://www.amd.com,Tech
+NVIDIA,https://www.nvidia.com,Tech
+Salesforce,https://www.salesforce.com,Tech
+Oracle,https://www.oracle.com,Tech
+SAP,https://www.sap.com,Tech
+Adobe,https://www.adobe.com,Tech
+IBM,https://www.ibm.com,Tech
+Cisco,https://www.cisco.com,Tech
+Dell,https://www.dell.com,Tech
+HP,https://www.hp.com,Tech
+Lenovo,https://www.lenovo.com,Tech
+Uber,https://www.uber.com,Tech
+Airbnb,https://www.airbnb.com,Tech
+Lyft,https://www.lyft.com,Tech
+DoorDash,https://www.doordash.com,Tech
+Spotify,https://www.spotify.com,Entertainment
+Hulu,https://www.hulu.com,Entertainment
+HBO,https://www.hbo.com,Entertainment
+Paramount,https://www.paramount.com,Entertainment
+NBC Universal,https://www.nbcuniversal.com,Entertainment
+Fidelity,https://www.fidelity.com,Finance
+Vanguard,https://www.vanguard.com,Finance
+Charles Schwab,https://www.schwab.com,Finance
+Capital One,https://www.capitalone.com,Finance
+Wells Fargo,https://www.wellsfargo.com,Finance
+Bank of America,https://www.bankofamerica.com,Finance
+Citibank,https://www.citibank.com,Finance
+Progressive,https://www.progressive.com,Finance
+Allstate,https://www.allstate.com,Finance
+Liberty Mutual,https://www.libertymutual.com,Finance
+Farmers Insurance,https://www.farmers.com,Finance
+Nationwide,https://www.nationwide.com,Finance
+Hilton,https://www.hilton.com,Travel
+Marriott,https://www.marriott.com,Travel
+Hyatt,https://www.hyatt.com,Travel
+Delta,https://www.delta.com,Travel
+United Airlines,https://www.united.com,Travel
+American Airlines,https://www.aa.com,Travel
+Southwest,https://www.southwest.com,Travel
+Expedia,https://www.expedia.com,Travel
+Booking.com,https://www.booking.com,Travel
+TripAdvisor,https://www.tripadvisor.com,Travel

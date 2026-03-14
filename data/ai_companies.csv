@@ -1,0 +1,51 @@
+name,website,category,stage,notable
+OpenAI,https://openai.com,Foundation Model,Late,ChatGPT creator
+Anthropic,https://anthropic.com,Foundation Model,Late,Claude creator
+Google DeepMind,https://deepmind.google,Foundation Model,Public,Gemini
+Meta AI,https://ai.meta.com,Foundation Model,Public,Llama open source
+Mistral AI,https://mistral.ai,Foundation Model,Growth,European frontier lab
+Cohere,https://cohere.com,Foundation Model,Growth,Enterprise LLMs
+AI21 Labs,https://ai21.com,Foundation Model,Growth,Jamba models
+xAI,https://x.ai,Foundation Model,Late,Grok creator
+Stability AI,https://stability.ai,Foundation Model,Growth,Stable Diffusion
+Inflection AI,https://inflection.ai,Foundation Model,Growth,Pi assistant
+Perplexity,https://perplexity.ai,AI Application,Growth,AI search engine
+Cursor,https://cursor.com,AI Application,Growth,AI code editor
+Jasper,https://jasper.ai,AI Application,Growth,AI marketing content
+Runway,https://runwayml.com,AI Application,Growth,AI video generation
+Midjourney,https://midjourney.com,AI Application,Growth,AI image generation
+ElevenLabs,https://elevenlabs.io,AI Application,Growth,AI voice/audio
+Synthesia,https://synthesia.io,AI Application,Growth,AI video avatars
+Glean,https://glean.com,AI Application,Growth,Enterprise AI search
+Harvey,https://harvey.ai,AI Application,Growth,AI for legal
+Hebbia,https://hebbia.ai,AI Application,Growth,AI for finance/research
+Writer,https://writer.com,AI Application,Growth,Enterprise AI writing
+Copy.ai,https://copy.ai,AI Application,Growth,AI sales/marketing
+Moveworks,https://moveworks.com,AI Application,Growth,AI IT support
+Adept AI,https://adept.ai,AI Application,Growth,AI agent for workflows
+Sierra AI,https://sierra.ai,AI Application,Growth,AI customer service
+Scale AI,https://scale.com,AI Infrastructure,Late,Data labeling/RLHF
+Hugging Face,https://huggingface.co,AI Infrastructure,Growth,Model hub/community
+Weights & Biases,https://wandb.ai,AI Infrastructure,Growth,ML experiment tracking
+LangChain,https://langchain.dev,AI Infrastructure,Growth,LLM app framework
+Pinecone,https://pinecone.io,AI Infrastructure,Growth,Vector database
+Weaviate,https://weaviate.io,AI Infrastructure,Growth,Vector database
+Replicate,https://replicate.com,AI Infrastructure,Growth,Model hosting API
+Modal,https://modal.com,AI Infrastructure,Growth,Serverless GPU compute
+Together AI,https://together.ai,AI Infrastructure,Growth,Open model inference
+Anyscale,https://anyscale.com,AI Infrastructure,Growth,Ray/distributed compute
+Databricks,https://databricks.com,AI Infrastructure,Late,Data + AI platform
+Snorkel AI,https://snorkel.ai,AI Infrastructure,Growth,Data-centric AI
+Labelbox,https://labelbox.com,AI Infrastructure,Growth,Data labeling
+Unstructured,https://unstructured.io,AI Infrastructure,Growth,Data preprocessing
+Cerebras,https://cerebras.ai,AI Hardware,Growth,AI chip/wafer-scale
+Groq,https://groq.com,AI Hardware,Growth,LPU inference chips
+SambaNova,https://sambanova.ai,AI Hardware,Growth,AI chip systems
+d-Matrix,https://d-matrix.ai,AI Hardware,Growth,In-memory compute chips
+Cognition,https://cognition.ai,AI Application,Growth,Devin AI software engineer
+Magic AI,https://magic.dev,AI Application,Growth,AI coding assistant
+Poolside,https://poolside.ai,Foundation Model,Growth,Code-focused foundation model
+Sakana AI,https://sakana.ai,Foundation Model,Growth,Nature-inspired AI research
+Imbue,https://imbue.com,Foundation Model,Growth,AI agents/reasoning
+Pika,https://pika.art,AI Application,Growth,AI video generation
+Lightricks,https://lightricks.com,AI Application,Growth,AI creative tools

@@ -1,0 +1,36 @@
+# Crawl4AI (use existing venv installation)
+# crawl4ai is installed in findsday-airtable/.venv
+
+# Firecrawl (for structured data extraction)
+firecrawl-py>=1.0.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Database
+sqlite-utils>=3.0.0
+
+# Scoring + analytics
+scikit-learn>=1.3.0
+
+# Dashboard (Phase 1)
+streamlit>=1.28.0
+plotly>=5.17.0
+
+# Utilities
+python-dateutil>=2.8.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Phase 2: API
+# fastapi>=0.104.0
+# uvicorn>=0.24.0
+
+# Phase 2: Frontend
+# nextjs (separate package.json)
+# recharts
+# tremor
+
+# Testing
+pytest>=7.4.0
