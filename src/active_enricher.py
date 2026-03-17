@@ -1,7 +1,7 @@
 """
-Brand Radar — Active Signal Enricher (Crawl4AI)
-Fallback/Enrichment layer: specifically targets careers, newsroom, and leadership
-pages for AI companies when Firehose signal volume is low.
+Brand Radar — Active Signal Enricher (Multi-Source)
+Combines Crawl4AI direct scans with Google News, Hacker News, Reddit,
+and SEC EDGAR to triangulate intent signals across free public sources.
 """
 
 import asyncio
@@ -12,11 +12,12 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Optional
 
-# Path to local venv's python to ensure we use the correct environment
-# In a real script, this would just be 'python' if the venv is active.
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
-
 from signals import SignalProcessor
+from gnews_client import GNewsClient
+from hackernews_client import HackerNewsClient
+from reddit_client import RedditClient
+from sec_client import SECClient
 
 # ---------------------------------------------------------------------------
 ROOT_DIR = Path(__file__).parent.parent
@@ -27,27 +28,6 @@ WEB_DATA_DIR = ROOT_DIR / "web" / "data"
 WEB_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------------------
-# Active Signal Configuration (Mapping keywords to Firehose-compatible tags)
-# ---------------------------------------------------------------------------
-ACTIVE_SIGNAL_MAP = {
-    "leadership": {
-        "keywords": [r"(appointed|named|joined).*(chief|cmo|ceo|cfo|presid)", r"new (chief|cmo|ceo|cfo)", r"vp marketing", r"head of marketing"],
-        "tag": "leadership"
-    },
-    "hiring": {
-        "keywords": [r"(hiring|joining|seeking).*(marketing|brand|growth|ads)", r"marketing.*careers", r"brand.*manager"],
-        "tag": "hiring"
-    },
-    "product": {
-        "keywords": [r"(launch|unveil|introduce|announce).*(product|model|api)", r"new (model|feature|release)"],
-        "tag": "product"
-    },
-    "events": {
-        "keywords": [r"(conference|keynote|demo day|summit|booth)", r"exhibiting at"],
-        "tag": "events"
-    }
-}
-
 class ActiveEnricher:
     def __init__(self):
         self.processor = SignalProcessor(str(COMPANIES_CSV))
@@ -58,115 +38,121 @@ class ActiveEnricher:
         )
 
     def _get_target_urls(self, company: dict) -> List[str]:
-        """Generate high-intent subpages to check."""
+        """Generate high-intent subpages to check (including Hidden Alpha targets)."""
         base = company["website"].rstrip("/")
-        # We target the most likely signal-rich pages
         return [
-            f"{base}/newsroom",
+            f"{base}/blog",
             f"{base}/news",
-            f"{base}/press",
             f"{base}/careers",
             f"{base}/about",
-            base # Homepage as fallback
+            base
         ]
 
     def _extract_signals_from_text(self, text: str, company_name: str, url: str) -> List[dict]:
-        """Convert raw text findings into structured signal dicts compatible with signals.py."""
+        """Convert raw text findings into structured signal dicts (High Precision)."""
         signals = []
         text_lower = text.lower()
         
-        for category, config in ACTIVE_SIGNAL_MAP.items():
-            for pattern in config["keywords"]:
-                matches = re.findall(pattern, text_lower)
-                if matches:
-                    # Create a dummy "event" compatible with SignalProcessor.process_event
-                    # but marked as an "active" source
+        ACTIVE_PATTERNS = {
+            "agency_review": [r"manage.*external.*agency", r"agency.*partnership", r"rfp", r"agency.*selection", r"manage.*creative.*partner"],
+            "leadership": [r"new (chief|cmo|ceo|cfo|head of marketing)", r"vp (marketing|brand|growth)", r"director of (brand|growth|performance)"],
+            "ad_spend": [r"scale.*brand.*campaign", r"marketing.*budget.*management", r"global.*brand.*launch", r"scaling.*paid.*media"],
+            "hiring": [r"hiring.*marketing.*team", r"seeking.*growth.*lead", r"performance.*marketing.*manager"],
+            "product": [r"(launch|unveil|announce).*(product|model|api)", r"new (model|version|beta)"]
+        }
+        
+        for category, patterns in ACTIVE_PATTERNS.items():
+            for pattern in patterns:
+                if re.search(pattern, text_lower):
                     signals.append({
                         "company_name": company_name,
-                        "signal_type": config["tag"],
-                        "title": f"Active detection: {category.title()} signal found on site",
+                        "signal_type": category,
+                        "title": f"Hidden Alpha: {category.title()} trigger detected in source text",
                         "url": url,
                         "matched_at": datetime.now().isoformat(),
-                        "summary": f"Detected via Crawl4AI on {url}. Content snippet: {text[:200]}...",
-                        "source_domain": "company_website_crawl"
+                        "summary": f"Detected via Crawl4AI on {url}. Direct company signal.",
+                        "source_domain": "direct_scan"
                     })
-                    break # One signal per category per page is enough for enrichment
-        
+                    break 
         return signals
 
     async def enrich_company(self, company: dict) -> List[dict]:
-        """Crawl a single company's high-intent pages and return signals."""
         urls = self._get_target_urls(company)
         all_active_signals = []
-        
-        print(f"🕷️  Checking {company['name']} via Crawl4AI...")
-        
         async with AsyncWebCrawler(config=self.browser_config) as crawler:
-            # We check up to 3 URLs to be efficient
             for url in urls[:3]:
                 try:
                     result = await crawler.arun(url=url, config=self.crawler_config)
                     if result.success and result.markdown:
                         found = self._extract_signals_from_text(result.markdown, company["name"], url)
                         if found:
-                            print(f"   ✅ Found {len(found)} active signals on {url}")
                             all_active_signals.extend(found)
-                except Exception as e:
-                    print(f"   ⚠️  Failed to crawl {url}: {e}")
-        
+                except Exception: pass
         return all_active_signals
 
+    def _collect_external_signals(self, companies: list) -> List[dict]:
+        """Gather signals from all free external sources."""
+        print("[+] Fetching Google News signals...")
+        gnews = GNewsClient()
+        gnews_signals = gnews.collect_signals(companies)
+        print(f"    -> {len(gnews_signals)} signals from Google News")
+
+        print("[+] Fetching Hacker News signals...")
+        hn = HackerNewsClient()
+        hn_signals = hn.collect_signals(companies)
+        print(f"    -> {len(hn_signals)} signals from Hacker News")
+
+        print("[+] Fetching Reddit signals...")
+        reddit = RedditClient()
+        reddit_signals = reddit.collect_signals(companies)
+        print(f"    -> {len(reddit_signals)} signals from Reddit")
+
+        print("[+] Fetching SEC EDGAR signals...")
+        sec = SECClient()
+        sec_signals = sec.collect_signals(companies)
+        print(f"    -> {len(sec_signals)} signals from SEC EDGAR")
+
+        return gnews_signals + hn_signals + reddit_signals + sec_signals
+
     async def run_full_enrichment(self, limit: int = 50):
-        """Run enrichment for all companies and save a combined snapshot."""
         companies = list(self.processor.companies.values())[:limit]
         all_signals = {}
-        
-        # Load existing signals from latest snapshot to avoid starting from zero
         latest_snap = self._get_latest_snapshot()
         if latest_snap:
-            print(f"📂 Loading baseline signals from {latest_snap.name}")
             with open(latest_snap, "r") as f:
                 snap_data = json.load(f)
                 for s in snap_data.get("scores", []):
-                    # We map back top_signals to our signal list
                     all_signals[s["company"]] = s.get("top_signals", [])
 
-        # Add Active Signals
+        # --- External sources (Google News, HN, Reddit, SEC) ---
+        external_raw = self._collect_external_signals(companies)
+        for sig in external_raw:
+            processed = self.processor.process_event(sig)
+            if processed:
+                name = processed["company"]
+                all_signals.setdefault(name, []).append(processed)
+
+        # --- Crawl4AI direct scans (fill gaps for companies with few signals) ---
+        print("[+] Running Crawl4AI deep scans for low-signal companies...")
+        crawl_count = 0
         for comp in companies:
-            # Only enrich if Firehose volume is low (e.g. < 2 signals)
             if len(all_signals.get(comp["name"], [])) < 2:
                 active_sigs = await self.enrich_company(comp)
-                processed = []
-                for s in active_sigs:
-                    p = self.processor.process_event(s)
-                    if p: processed.append(p)
-                
-                if comp["name"] not in all_signals:
-                    all_signals[comp["name"]] = []
-                all_signals[comp["name"]].extend(processed)
-            else:
-                print(f"⏩ Skipping {comp['name']} (Firehose already has sufficient signals)")
+                processed = [self.processor.process_event(s) for s in active_sigs if s]
+                all_signals[comp["name"]] = all_signals.get(comp["name"], []) + [p for p in processed if p]
+                crawl_count += 1
+        print(f"    -> Deep-scanned {crawl_count} low-signal companies")
 
-        # Recalculate and Save
         scores = self.processor.get_all_scores(all_signals)
-        snap_path = self.processor.save_snapshot(scores, str(SNAPSHOTS_DIR))
-        
-        # Save to web frontend
+        self.processor.save_snapshot(scores, str(SNAPSHOTS_DIR))
         with open(WEB_DATA_DIR / "intelligence.json", "w") as f:
-            json.dump({
-                "generated_at": datetime.now().isoformat(),
-                "company_count": len(scores),
-                "scores": scores
-            }, f, indent=2)
-            
-        print(f"🚀 Enrichment Complete! New snapshot: {snap_path}")
-        print(f"📡 Data updated for Next.js frontend in {WEB_DATA_DIR}/intelligence.json")
+            json.dump({"generated_at": datetime.now().isoformat(), "company_count": len(scores), "scores": scores}, f, indent=2)
+        print(f"[✓] Done. {len(scores)} companies scored, written to intelligence.json")
 
     def _get_latest_snapshot(self) -> Optional[Path]:
         snaps = sorted(SNAPSHOTS_DIR.glob("scores_*.json"), reverse=True)
         return snaps[0] if snaps else None
 
-# ---------------------------------------------------------------------------
 if __name__ == "__main__":
     enricher = ActiveEnricher()
     asyncio.run(enricher.run_full_enrichment())

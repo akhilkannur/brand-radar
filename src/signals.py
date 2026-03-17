@@ -38,6 +38,8 @@ MID_CREDIBILITY_SOURCES = {
     "thenextweb.com", "techradar.com", "engadget.com", "cnet.com",
     "analyticsinsight.net", "artificialintelligence-news.com",
     "ainews.com", "hbr.org", "medium.com", "substack.com",
+    # Community / social signals
+    "news.ycombinator.com", "reddit.com",
     # Job boards (valuable for hiring signals)
     "linkedin.com", "greenhouse.io", "lever.co", "ashbyhq.com",
     "wellfound.com",

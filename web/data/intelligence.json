@@ -1,54 +1,53 @@
 {
-  "generated_at": "2026-03-14T12:55:32.293670",
+  "generated_at": "2026-03-16",
   "company_count": 50,
   "scores": [
     {
       "company": "OpenAI",
-      "score": 30,
-      "trend": "stable",
+      "score": 70,
+      "trend": "rising",
       "breakdown": {
-        "ad_spend": 13.5,
-        "funding": 12.0,
-        "leadership": 4.5
+        "funding": 20.0,
+        "leadership": 0,
+        "product": 15.0,
+        "hiring": 0,
+        "marketing": 15.0,
+        "partnership": 20.0
       },
       "top_signals": [
         {
           "company": "OpenAI",
-          "signal_type": "ad_spend",
-          "signal_strength": 9,
-          "title": "OpenAI launches Super Bowl campaign and ChatGPT advertising network",
-          "url": "https://adage.com/2026/02/openai-superbowl-ads-launch/",
-          "source": "adage.com",
-          "timestamp": "2026-02-14T09:00:00",
-          "summary": "OpenAI ran its first Super Bowl campaign and confirmed the rollout of native ads within ChatGPT.",
-          "why_it_matters": "Active advertising or brand campaign \u2014 confirmed spend"
-        },
-        {
-          "company": "OpenAI",
           "signal_type": "funding",
-          "signal_strength": 8,
-          "title": "OpenAI raises historic 10B round led by Amazon and Nvidia",
-          "url": "https://techcrunch.com/2026/02/27/openai-funding-largest-private-tech-deal/",
+          "signal_strength": 10,
+          "title": "OpenAI raises $110B in record funding round",
+          "url": "https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/",
           "source": "techcrunch.com",
-          "timestamp": "2026-02-27T10:00:00",
-          "summary": "OpenAI secured a record-breaking 10B funding round at a 40B valuation to expand AI infrastructure.",
-          "why_it_matters": "Fresh capital typically leads to marketing spend within 3-6 months"
+          "timestamp": "2026-02-27T00:00:00",
+          "summary": "OpenAI raised $110B from Amazon ($50B), Nvidia ($30B), and SoftBank ($30B) at $730B pre-money valuation."
         },
         {
           "company": "OpenAI",
-          "signal_type": "leadership",
-          "signal_strength": 3,
-          "title": "Kate Rouch leads OpenAI marketing expansion as CMO",
-          "url": "https://brand-innovators.com/2026/openai-marketing-leadership-rouch/",
-          "source": "brand-innovators.com",
-          "timestamp": "2026-01-15T12:00:00",
-          "summary": "CMO Kate Rouch is spearheading OpenAIs transition from research lab to global consumer brand.",
-          "why_it_matters": "New marketing/executive leadership often triggers agency reviews"
+          "signal_type": "partnership",
+          "signal_strength": 10,
+          "title": "OpenAI and Amazon announce strategic $50B partnership",
+          "url": "https://openai.com/index/amazon-partnership/",
+          "source": "openai.com",
+          "timestamp": "2026-02-27T00:00:00",
+          "summary": "AWS to be exclusive cloud provider for OpenAI Frontier, joint development of Stateful Runtime Environment."
+        },
+        {
+          "company": "OpenAI",
+          "signal_type": "product",
+          "signal_strength": 8,
+          "title": "OpenAI announces Scaling AI for everyone initiative",
+          "url": "https://openai.com/index/scaling-ai-for-everyone/",
+          "source": "openai.com",
+          "timestamp": "2026-02-27T00:00:00",
+          "summary": "Major expansion of AI access for consumers, developers, and enterprises with new infrastructure."
         }
       ],
       "signal_count": 3,
-      "last_signal": "2026-02-27T10:00:00",
-      "insight": "\ud83d\udd25 **CRITICAL WINDOW:** New leadership + fresh capital indicates a total GTM overhaul is likely in the next 3 months. Latest Trigger: \"OpenAI launches Super Bowl campaign and ChatGPT advertising network\"",
+      "last_signal": "2026-02-27T00:00:00",
       "category": "Foundation Model",
       "stage": "Late"
     },
@@ -226,37 +225,99 @@
     },
     {
       "company": "Mistral AI",
-      "score": 0,
-      "trend": "stable",
+      "score": 55,
+      "trend": "rising",
       "breakdown": {
-        "funding": 0,
+        "funding": 15.0,
         "leadership": 0,
-        "product": 0,
+        "product": 10.0,
         "hiring": 0,
-        "marketing": 0,
-        "partnership": 0
+        "marketing": 10.0,
+        "partnership": 20.0
       },
-      "top_signals": [],
-      "signal_count": 0,
-      "last_signal": null,
+      "top_signals": [
+        {
+          "company": "Mistral AI",
+          "signal_type": "partnership",
+          "signal_strength": 10,
+          "title": "Mistral AI inks strategic partnership with Accenture",
+          "url": "https://techcrunch.com/2026/02/26/mistral-ai-inks-a-deal-with-global-consulting-giant-accenture/",
+          "source": "techcrunch.com",
+          "timestamp": "2026-02-26T00:00:00",
+          "summary": "Multi-year partnership with Accenture to expand enterprise AI deployment across Europe."
+        },
+        {
+          "company": "Mistral AI",
+          "signal_type": "funding",
+          "signal_strength": 10,
+          "title": "Mistral AI raises €1.7B at €11.7B valuation",
+          "url": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai",
+          "source": "mistral.ai",
+          "timestamp": "2025-09-09T00:00:00",
+          "summary": "Series C led by ASML to fuel scientific research and frontier AI development."
+        },
+        {
+          "company": "Mistral AI",
+          "signal_type": "partnership",
+          "signal_strength": 8,
+          "title": "Mistral AI commits €1.2B to Sweden's AI infrastructure",
+          "url": "https://www.cnbc.com/2026/02/11/mistral-ai-infrastructure-sweden.html/",
+          "source": "cnbc.com",
+          "timestamp": "2026-02-11T00:00:00",
+          "summary": "One of Europe's largest AI infrastructure commitments to develop data centers and compute capacity."
+        }
+      ],
+      "signal_count": 3,
+      "last_signal": "2026-02-26T00:00:00",
       "category": "Foundation Model",
       "stage": "Growth"
     },
     {
       "company": "Cohere",
-      "score": 0,
-      "trend": "stable",
+      "score": 45,
+      "trend": "rising",
       "breakdown": {
-        "funding": 0,
-        "leadership": 0,
-        "product": 0,
+        "funding": 15.0,
+        "leadership": 10.0,
+        "product": 10.0,
         "hiring": 0,
         "marketing": 0,
-        "partnership": 0
+        "partnership": 10.0
       },
-      "top_signals": [],
-      "signal_count": 0,
-      "last_signal": null,
+      "top_signals": [
+        {
+          "company": "Cohere",
+          "signal_type": "funding",
+          "signal_strength": 10,
+          "title": "Cohere raises $500M at $6.8B valuation",
+          "url": "https://www.neuron.expert/news/ai-startup-cohere-valued-at-68-billion-in-latest-fundraise-appoints-new-executives/14181/en/",
+          "source": "neuron.expert",
+          "timestamp": "2025-08-14T00:00:00",
+          "summary": "Funding led by Radical Ventures and Inovia Capital with participation from AMD, Nvidia, Salesforce."
+        },
+        {
+          "company": "Cohere",
+          "signal_type": "leadership",
+          "signal_strength": 8,
+          "title": "Cohere hires Joelle Pineau as Chief AI Officer",
+          "url": "https://www.investpsp.com/en/news/fresh-funding-enables-cohere-to-accelerate-its-global-expansion-and-build-the-next-generation-of-secure-enterprise-and-sovereign-ai-solutions/",
+          "source": "investpsp.com",
+          "timestamp": "2026-02-17T00:00:00",
+          "summary": "Former Head of Meta's Fundamental AI Research joins as CAIO; former Uber exec as CFO."
+        },
+        {
+          "company": "Cohere",
+          "signal_type": "partnership",
+          "signal_strength": 8,
+          "title": "SAP and Cohere expand partnership for sovereign AI",
+          "url": "https://news.sap.com/canada/2026/02/sap-and-cohere-expand-partnership-to-launch-sovereign-ai-solutions-globally-beginning-in-canada/",
+          "source": "sap.com",
+          "timestamp": "2026-02-10T00:00:00",
+          "summary": "Expanded partnership to deliver full-stack sovereign AI solutions worldwide, starting in Canada."
+        }
+      ],
+      "signal_count": 3,
+      "last_signal": "2026-02-17T00:00:00",
       "category": "Foundation Model",
       "stage": "Growth"
     },
@@ -568,19 +629,40 @@
     },
     {
       "company": "Hugging Face",
-      "score": 0,
-      "trend": "stable",
+      "score": 30,
+      "trend": "rising",
       "breakdown": {
         "funding": 0,
         "leadership": 0,
-        "product": 0,
+        "product": 10.0,
         "hiring": 0,
         "marketing": 0,
-        "partnership": 0
+        "partnership": 20.0
       },
-      "top_signals": [],
-      "signal_count": 0,
-      "last_signal": null,
+      "top_signals": [
+        {
+          "company": "Hugging Face",
+          "signal_type": "partnership",
+          "signal_strength": 10,
+          "title": "Hugging Face partners with Cerebras for fastest inference",
+          "url": "https://www.cerebras.ai/news/hugging-face-partners-with-cerebras-to-give-developers-access-to-industry-s-fastest-ai-inference",
+          "source": "cerebras.ai",
+          "timestamp": "2025-03-11T00:00:00",
+          "summary": "Cerebras Inference integrated into Hugging Face Hub, 70x faster than GPU solutions."
+        },
+        {
+          "company": "Hugging Face",
+          "signal_type": "funding",
+          "signal_strength": 8,
+          "title": "Hugging Face declined $500M NVIDIA investment to stay independent",
+          "url": "https://www.linkedin.com/posts/seb-johnson_just-in-hugging-face-turned-down-a-500m-activity-7422629545503277056-pozg",
+          "source": "linkedin.com",
+          "timestamp": "2026-01-15T00:00:00",
+          "summary": "NVIDIA offered $500M at $7B valuation, almost double previous raise. Hugging Face declined to stay independent."
+        }
+      ],
+      "signal_count": 2,
+      "last_signal": "2026-01-15T00:00:00",
       "category": "AI Infrastructure",
       "stage": "Growth"
     },
@@ -730,19 +812,50 @@
     },
     {
       "company": "Databricks",
-      "score": 0,
-      "trend": "stable",
+      "score": 60,
+      "trend": "rising",
       "breakdown": {
-        "funding": 0,
-        "leadership": 0,
-        "product": 0,
+        "funding": 20.0,
+        "leadership": 10.0,
+        "product": 15.0,
         "hiring": 0,
         "marketing": 0,
-        "partnership": 0
+        "partnership": 15.0
       },
-      "top_signals": [],
-      "signal_count": 0,
-      "last_signal": null,
+      "top_signals": [
+        {
+          "company": "Databricks",
+          "signal_type": "funding",
+          "signal_strength": 10,
+          "title": "Databricks raises $5B at $134B valuation",
+          "url": "https://www.reuters.com/business/databricks-valued-134-billion-latest-fundraise-cnbc-reports-2026-02-09/",
+          "source": "reuters.com",
+          "timestamp": "2026-02-09T00:00:00",
+          "summary": "One of the largest private tech funding rounds. $2B debt financing led by JPMorgan Chase."
+        },
+        {
+          "company": "Databricks",
+          "signal_type": "product",
+          "signal_strength": 8,
+          "title": "Databricks AI products cross $1.4B annualized revenue",
+          "url": "https://siliconangle.com/2026/02/09/databricks-closes-7b-financing-round-134b-valuation/",
+          "source": "siliconangle.com",
+          "timestamp": "2026-02-09T00:00:00",
+          "summary": "AI products including Genie assistant driving growth. Revenue up 65% year over year."
+        },
+        {
+          "company": "Databricks",
+          "signal_type": "leadership",
+          "signal_strength": 6,
+          "title": "Databricks prepares for IPO in 2026",
+          "url": "https://www.cnbc.com/2026/01/23/databricks-obtains-1point8-billion-in-additional-debt-ahead-of-ipo.html",
+          "source": "cnbc.com",
+          "timestamp": "2026-01-23T00:00:00",
+          "summary": "Company obtains $1.8B additional debt, now has access to $7B+ total debt ahead of potential IPO."
+        }
+      ],
+      "signal_count": 3,
+      "last_signal": "2026-02-09T00:00:00",
       "category": "AI Infrastructure",
       "stage": "Late"
     },
